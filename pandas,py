@@ -43,28 +43,28 @@ conn.commit()
 df = pd.read_sql("SELECT * FROM students", conn)
 #print(df)
 
-# print(df.head())  # Show first 5 rows
-# print(df.head(10))
-# print(df.tail())
-# print(df.tail(10))
+print(df.head())  # Show first 5 rows
+print(df.head(10))
+print(df.tail())
+print(df.tail(10))
 
-# print(df.shape)         # (rows, columns)
-# print(df.columns)       # Column names
-# print(df.info())        # Data summary
-# print(df.describe())    # Statistics
+print(df.shape)         # (rows, columns)
+print(df.columns)       # Column names
+print(df.info())        # Data summary
+print(df.describe())    # Statistics
 
-# print("Average Marks:", df['marks'].mean())
+print("Average Marks:", df['marks'].mean())
 
-# print(df.groupby('department')['marks'].mean())
-# print(df.groupby('gender')['marks'].mean())
+print(df.groupby('department')['marks'].mean())
+print(df.groupby('gender')['marks'].mean())
 
-# print(df['gender'].value_counts())
+print(df['gender'].value_counts())
 
-# print(df[df['marks'] > 80])
+print(df[df['marks'] > 80])
 
-# print(df['name'])               # Single column
-# print(df[['name', 'marks']])    # Multiple columns
-# print(df.iloc[0])               # First row
+print(df['name'])               # Single column
+print(df[['name', 'marks']])    # Multiple columns
+print(df.iloc[0])               # First row
 
 
 df.to_csv("output.csv", index=False)
